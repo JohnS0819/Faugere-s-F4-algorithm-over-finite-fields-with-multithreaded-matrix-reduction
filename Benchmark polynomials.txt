@@ -4,7 +4,7 @@
 	//	polynomial("x*y*z + y*z*s + z*s*w + s*w*l + w*l*x + l*x*y"),
 	//	polynomial("x*y*z*s + y*z*s*w + z*s*w*l + s*w*l*x + w*l*x*y + l*x*y*z"),
 	//	polynomial("x*y*z*s*w + y*z*s*w*l + z*s*w*l*x + s*w*l*x*y + w*l*x*y*z + l*x*y*z*s")
-	};
+	//};
 
 	//Cyclic 7
 	// {
