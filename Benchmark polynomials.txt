@@ -1,13 +1,13 @@
 	//Cyclic 6
-	/*std::vector<polynomial> alpha = { polynomial("x + y + z + s + w + l"),
-		polynomial("x*y*z*s*w*l - 1"), polynomial("x*y + y*z + z*s + s*w + w*l + l*x"),
-		polynomial("x*y*z + y*z*s + z*s*w + s*w*l + w*l*x + l*x*y"),
-		polynomial("x*y*z*s + y*z*s*w + z*s*w*l + s*w*l*x + w*l*x*y + l*x*y*z"),
-		polynomial("x*y*z*s*w + y*z*s*w*l + z*s*w*l*x + s*w*l*x*y + w*l*x*y*z + l*x*y*z*s")
-	};*/
+	// 	polynomial("x + y + z + s + w + l"),
+	//	polynomial("x*y*z*s*w*l - 1"), polynomial("x*y + y*z + z*s + s*w + w*l + l*x"),
+	//	polynomial("x*y*z + y*z*s + z*s*w + s*w*l + w*l*x + l*x*y"),
+	//	polynomial("x*y*z*s + y*z*s*w + z*s*w*l + s*w*l*x + w*l*x*y + l*x*y*z"),
+	//	polynomial("x*y*z*s*w + y*z*s*w*l + z*s*w*l*x + s*w*l*x*y + w*l*x*y*z + l*x*y*z*s")
+	};
 
 	//Cyclic 7
-	//std::vector<polynomial> alpha = {
+	// {
 	//	polynomial("x*y*z*s*w*l*q - 1"),
 	//	polynomial("x*y*z*s*w*l + y*z*s*w*l*q + z*s*w*l*q*x + s*w*l*q*x*y + w*l*q*x*y*z + l*q*x*y*z*s + q*x*y*z*s*w"),
 	//	polynomial("x*y*z*s*w + y*z*s*w*l + z*s*w*l*q + s*w*l*q*x + w*l*q*x*y + l*q*x*y*z + q*x*y*z*s"),
@@ -17,7 +17,7 @@
 	//	polynomial("x + y + z + s + w + l + q")
 	//};
 	//Cyclic 8
-	//std::vector<polynomial> alpha = {
+	// {
 	//	polynomial("xyzswlqu − 1"),
 	//	polynomial("xyzswlq + yzswlqu + zswlqux + swlquxy + wlquxyz + lquxyzs + quxyzsw + uxyzswl"),
 	//	polynomial("xyzswl + yzswlq + zswlqu + swlqux + wlquxy + lquxyz + quxyzs + uxyzsw"),
@@ -28,7 +28,7 @@
 	//	polynomial("x + y + z + s + w + l + q + u")
 	//};
 	//Hcylic8
-	//std::vector<polynomial> alpha = {
+	// {
 	//	polynomial("xyzswlqu − h^8"),
 	//	polynomial("xyzswlq + yzswlqu + zswlqux + swlquxy + wlquxyz + lquxyzs + quxyzsw + uxyzswl"),
 	//	polynomial("xyzswl + yzswlq + zswlqu + swlqux + wlquxy + lquxyz + quxyzs + uxyzsw"),
