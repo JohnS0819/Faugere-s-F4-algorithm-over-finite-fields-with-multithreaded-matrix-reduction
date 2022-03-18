@@ -1,4 +1,4 @@
-//Cyclic 6
+	//Cyclic 6
 	/*std::vector<polynomial> alpha = { polynomial("x + y + z + s + w + l"),
 		polynomial("x*y*z*s*w*l - 1"), polynomial("x*y + y*z + z*s + s*w + w*l + l*x"),
 		polynomial("x*y*z + y*z*s + z*s*w + s*w*l + w*l*x + l*x*y"),
