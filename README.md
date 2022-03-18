@@ -1,3 +1,10 @@
-"# Faugere-s-F4-algorithm-over-finite-fields-with-multithreaded-matrix-reduction" 
-"# Faugere-s-F4-algorithm-over-finite-fields-with-multithreaded-matrix-reduction" 
-"# Faugere-s-F4-algorithm-over-finite-fields-with-multithreaded-matrix-reduction" 
+Faugere-s-F4-algorithm-over-finite-fields-with-multithreaded-matrix-reduction
+
+Note that this code uses both the Boost library as well as Saied H. Khayat's (https://github.com/saiedhk) GaloisCPP library for generalized arrithmetic over finite fields.  
+
+The following are some of the codes I devloped during the summer of 2021 for a research project on computational algebraic geometry, and specifically on groebner basis finding algorithms.
+
+The F4_classes_and_functions.h header contains the neccesary class definitions for polynomial and monomial arrithmetic as well as some definitions needed for the Gebauer Moller criterion and the crit_pair operations. The F4_algorithms.h header contains the more interesting code, including both the implementation of the F4 algorithm and the symbolic_preprocessing and rowechelon subalgorithms for matrix reduction. The Benchmark polynomials text file contains a list of the bases for some ideals historically used to benchmark groebner basis finding algorithms. It should be noted that memory concerns will likely limit this implementation from ever being competetive with decomposition based F4 implementations beyond dimension 10 or 11 ideals;
+
+
+Polynomial operations are carried out using under the polynomial class defined in F4_classes_and_functions.h, by repeated operations on monomials (arrays). During the most costly operations of the F4 algorithm, those being sparse matrix reduction, polynomials are compressed using a list of lists scheme. During the reduction process the workload is split among the available threads, with each thread operating on only a small section of the matrix at once. Each thread is passed a list of rows not to operate on, these rows have been previously ruled out as redundant (they won't be part of the ouput basis) however are still required for the correct output of a matrix in reduced echelon form. As such to avoid additional calculations, we perform no write operations on these rows, instead only using them to reduce other rows before then discarding them. This has the added benefit of allowing all threads to work independently of each other, in contrast to other multithreaded gaussian-esque algorithms.  
